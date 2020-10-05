@@ -1,0 +1,114 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: helvetica;
+}
+
+/* all styles for the navigation-bar */
+.navigation {
+    background-color: blue;
+    height: 60px;
+    min-width: 768px;
+    max-width: 100%;
+    color: white;
+}
+
+.navi-list {
+    margin: 19px;
+    padding: 0px;
+    float: left;
+    list-style-type: none;
+}
+
+.il {
+    display: inline;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+a {
+    color: white;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: blue;
+    background: white;
+}
+
+#fakebook {
+    padding: 5px;
+}
+
+#fakebook:hover {
+    color: blue;
+    background: white;
+}
+
+/* all styles for the content */
+.italic {
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+
+.content {
+    margin: 10px;
+}
+
+#user {
+    color: blue;
+    text-align: center;
+}
+
+#user_pic {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#info {
+    text-decoration: underline;
+    text-align: center;
+}
+
+table {
+
+}
+
+.b {
+    font-weight: bold;
+}
+
+.align-top {
+    vertical-align: top;
+}
+
+.list {
+    margin: 0px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.box {
+    margin: 5px;
+    border-style: solid;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: blue;
+    width: 535px;
+}
+button {
+    margin: 5px;
+    align: right;
+    width: 130px;
+    margin-left: 430px;
+
+}

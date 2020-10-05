@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>HAARgenau</title>
+
+        <meta charset="UTF-8">
+        <meta name="author" content="Christopher Hanke">
+
+        <link rel="stylesheet" href="static/projects/css/bootstrap.css">
+        <link rel="icon" type="image/x-icon" href="static/projects/img/favicon.ico">
+
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Navigationbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-tabs">
+            <a class="navbar-brand" href="#">HAARgenau</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Seiten Menü">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse justify-content-end navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link">Unser Angebot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#appointment">Terminanfrage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#about">Über uns</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Suche">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suche</button>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Imageslider -->
+        <div id="carouselExampleIndicators" class="carousel slide border-bottom" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/projects/img/hair-1.jpg" class="d-block w-100" alt="Barber-Shop">
+                    <!-- picture found https://pixabay.com/de/photos/friseur-iran-kosmetologie-mashhad-5212059/, under pixabay license -->
+                </div>
+                <div class="carousel-item">
+                    <img src="static/projects/img/hair-2.jpg" class="d-block w-100" alt="Coffee">
+                    <!-- picture found  https://pixabay.com/de/photos/kaffee-cafe-becher-dekorativ-983955/, under pixabay license -->
+                </div>
+                <div class="carousel-item">
+                    <img src="static/projects/img/hair-3.jpg" class="d-block w-100" alt="Haircut">
+                    <!-- picture found https://pixabay.com/de/photos/friseur-barbershop-haarschnitt-5194406/, under pixabay license -->
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Vorheriges</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Nächstes</span>
+            </a>
+        </div>
+        <hr>
+
+        <!-- Service -->
+        <div class="container" id="service">
+            <div class="row justify-content-center">
+                <h3>Unser Angebot</h3>
+            </div>
+            <div class="row card-deck">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between">
+                        <span class="card-title align-self-start">Styling</span>
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <div class="card-footer">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between">
+                        <span class="card-title">Kaffee</span> <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="card-footer">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between">
+                        <span class="card-title">Haircuts</span> <i class="fas fa-cut"></i>
+                    </div>
+                    <div class="card-footer">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- appointment -->
+        <div class="container" id="appointment">
+            <div class="row justify-content-center">
+                <h3>Terminanfrage</h3>
+            </div>
+            <div class="row mt-2">
+                <div class="col-sm">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="appointmentName" aria-describedby="Terminname" placeholder="Vor- und Nachname">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="appointmentPhone" aria-describedby="Telefonische Erreichbarkeit" placeholder="Telefonnummer">
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="appointmentDate" aria-describedby="Termindatum" placeholder="Termin">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="appointmentExtras" aria-describedby="Termininformationen" placeholder="Weitere Informationen (z.B. Haarschnitt)"></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="appointmentChris">
+                            <label class="form-check-label" for="appointmentChris">Termin bei Chris</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Bestätigen</button>
+                    </form>
+                </div>
+                <div class="col-sm mt-sm-0 mt-2">
+                    <table class="table">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Tag</th>
+                                <th scope="col">Öffnungszeiten</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Montag</th>
+                                <td>9.00 - 17.00</td>
+                            </tr>
+                            <tr>
+                                <th>Dienstag</th>
+                                <td>9.00 - 17.00</td>
+                            </tr>
+                            <tr>
+                                <th>Mittwoch</th>
+                                <td>7.30 - 13.30</td>
+                            </tr>
+                            <tr>
+                                <th>Donnerstag</th>
+                                <td>9.00 - 17.00</td>
+                            </tr>
+                            <tr>
+                                <th>Freitag</th>
+                                <td>10.00 - 20.00</td>
+                            </tr>
+                            <tr>
+                                <th>Samstag</th>
+                                <td>10.00 - 16.00</td>
+                            </tr>
+                            <tr>
+                                <th>Sonntag</th>
+                                <td>geschlossen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- faq -->
+        <div class="container" id="faq">
+            <div class="row justify-content-center">
+                <h3>FAQ - häufige Fragen</h3>
+            </div>
+            <div class="accordion mt-2" id="accordionOne">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h4 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Habt Ihr Gutscheine?
+                            </button>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
+                        <div class="card-body">
+                            <p>Ja. Es gibt Gutscheine bei uns. Sprechen Sie uns gerne darauf an.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h4 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Sind Tiere in Ihrem Laden erlaubt?
+                            </button>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
+                        <div class="card-body">
+                            <p>Tiere können zu Ihrem Besuch bei uns mitgebracht werden, soweit diese uns und unsere Gäste nicht angreifen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h4 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Haben Sie besondere Auszeichnungen erhalten?
+                            </button>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOne">
+                        <div class="card-body">
+                            <p>Alle Mitarbeiter haben ihre Gesellen-/Meisterprüfungen ordentlich abgeschlossen. Ansonsten zeichnet uns das Vertrauen unserer treuen Kunden aus.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+
+        <!-- footer -->
+        <footer class="footer-lg justify-content-center">
+            <div class="row justify-content-md-center text-sm-left text-center">
+
+                <div class="col-sm-3">
+                    <h4>Kontakt</h4>
+                    <p>HAARgenau Friseur GmbH<br>
+                    Musterstraße 123, Musterstadt<br>
+                    Telefon: 0123/456789<br>
+                    Email: <a href="mailto:info@haargenau-test.de">info@haargenau.de</a></p>
+                </div>
+                <div class="col-sm-1 align-self-center">
+                    <div class="d-flex justify-content-center">
+                        <h1 class=""><i class="fas fa-cut align-self-end"></i></h1>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Navigation</h4>
+                    <a href="#service">Unser Angebot</a><br>
+                    <a href="#appointment">Terminanfrage</a><br>
+                    <a href="#faq">FAQ</a><br>
+                    <a href="#" data-toggle="modal" data-target="#about">Über uns</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- about -->
+        <div class="modal fade" id="about" tabindex="-1" aria-labelledby="aboutLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="aboutLabel">Über uns</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        <img src="static/projects/img/hair-coffee-155311_1280.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
