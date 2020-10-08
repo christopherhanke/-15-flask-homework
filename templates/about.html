@@ -1,51 +1,17 @@
-<!DOCTYPE html>
-<html lang="de">
-    <head>
-        <title>Hello</title>
+{% extends "base.html" %}
 
-        <meta charset="UTF-8">
-        <meta name="author" content="christopher hanke">
-        <meta name="description" content="new web application as portfolio and information site">
-        <meta name="keywords" content="portfolio, informationen, kontakt, christopher, hanke">
-
-        <link rel="stylesheet" href="/static/standard/css/bootstrap.css" type="text/css">
-    </head>
-
-    <body>
-        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
-            <a class="navbar-brand" href="/">Christopher</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="about">Über mich</a>
-                    <a class="nav-item nav-link" href="portfolio">Portfolio</a>
-                </div>
-            </div>
-        </nav>
-
-        <div class="container mt-4">
-            <div class="row">
-                <div class="col-md-4">
-                    <h1>Christopher Hanke</h1>
-                    <p>
-                        Ich bin 32 Jahre alt und wohne in NRW (D). Derzeit nehme ich an dem WebDevelopment Kurs von
-                        <a href="https://www.smartninja.org/">SmartNinja</a>
-                        teil, um dies zu lernen.
-                    </p>
-                    <p>
-                        Ansonsten bin ich auch gerne ruhig unterwegs, daheim oder draußen.
-                    </p>
-                </div>
-            </div>
+{% block content %}
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Christopher Hanke</h1>
+            <p>
+                Ich bin 32 Jahre alt und wohne in NRW (D). Derzeit nehme ich an dem WebDevelopment Kurs von
+                <a href="https://www.smartninja.org/">SmartNinja</a>
+                teil, um dies zu lernen.
+            </p>
+            <p>
+                Ansonsten bin ich auch gerne ruhig unterwegs, daheim oder draußen.
+            </p>
         </div>
-
-
-        <!-- JavaScript files -->
-        <!-- bootstrap -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="static/standard/js/bootstrap.js"></script>
-    </body>
-</html>
+    </div>
+{% endblock content %}
